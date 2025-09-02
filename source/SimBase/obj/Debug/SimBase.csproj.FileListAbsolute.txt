@@ -1,0 +1,12 @@
+C:\Users\stefan.warnke\source\repos\DigiSim\SimBase\bin\Debug\SimBase.dll
+C:\Users\stefan.warnke\source\repos\DigiSim\SimBase\bin\Debug\SimBase.pdb
+C:\Users\stefan.warnke\source\repos\DigiSim\SimBase\obj\Debug\SimBase.csproj.AssemblyReference.cache
+C:\Users\stefan.warnke\source\repos\DigiSim\SimBase\obj\Debug\SimBase.csproj.CoreCompileInputs.cache
+C:\Users\stefan.warnke\source\repos\DigiSim\SimBase\obj\Debug\SimBase.dll
+C:\Users\stefan.warnke\source\repos\DigiSim\SimBase\obj\Debug\SimBase.pdb
+C:\Users\stefa\source\repos\DigiSim\SimBase\bin\Debug\SimBase.dll
+C:\Users\stefa\source\repos\DigiSim\SimBase\bin\Debug\SimBase.pdb
+C:\Users\stefa\source\repos\DigiSim\SimBase\obj\Debug\SimBase.csproj.AssemblyReference.cache
+C:\Users\stefa\source\repos\DigiSim\SimBase\obj\Debug\SimBase.csproj.CoreCompileInputs.cache
+C:\Users\stefa\source\repos\DigiSim\SimBase\obj\Debug\SimBase.dll
+C:\Users\stefa\source\repos\DigiSim\SimBase\obj\Debug\SimBase.pdb

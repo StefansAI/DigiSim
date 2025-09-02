@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <identifier>DigiSim_AppSettings</identifier>
+  <schematics_source>NetlistImport</schematics_source>
+  <schematics_name>TTL_6510_Computer.net</schematics_name>
+  <netlist_filename>TTL 6510 Computer.net</netlist_filename>
+  <digisim_filename>C:\Users\stefa\source\repos\DigiSim\DigiSim\bin\Debug\DigiSimFiles\TTL_6510_Computer_Test_All_Codes.dgsf</digisim_filename>
+  <recent_kicad_files>
+    <item>C:\Users\stefa\OneDrive\Documents\KiCad\9.0\projects\TTL 6510 Computer\TTL 6510 Computer.net</item>
+    <item>C:\Users\stefa\OneDrive\Documents\KiCad\9.0\projects\8bit-computer\8bit-computer.net</item>
+  </recent_kicad_files>
+  <recent_digisim_files>
+    <item>C:\Users\stefa\source\repos\DigiSim\DigiSim\bin\Debug\DigiSimFiles\TTL_6510_Computer_Test_All_Codes.dgsf</item>
+    <item>C:\Users\stefa\source\repos\DigiSim\DigiSim\bin\Debug\DigiSimFiles\TTL_6510_Computer_Test_SBC_Codes_in_BCD.dgsf</item>
+    <item>C:\Users\stefa\source\repos\DigiSim\DigiSim\bin\Debug\DigiSimFiles\TTL_6510_Computer_Test_ADC_Codes_in_BCD.dgsf</item>
+    <item>C:\Users\stefa\source\repos\DigiSim\DigiSim\bin\Debug\DigiSimFiles\TTL_6510_Computer_Test_Addr_Calc.dgsf</item>
+    <item>C:\Users\stefa\source\repos\DigiSim\DigiSim\bin\Debug\DigiSimFiles\TTL_6510_Computer_Test_Branch_Codes.dgsf</item>
+  </recent_digisim_files>
+</settings>
