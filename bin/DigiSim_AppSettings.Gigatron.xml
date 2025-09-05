@@ -5,30 +5,29 @@
   <schematics_name>Gigatron</schematics_name>
   <netlist_filename>
   </netlist_filename>
-  <digisim_filename>C:\Users\stefa\source\repos\DigiSim\DigiSim\bin\Debug\Backup.dgsf</digisim_filename>
+  <digisim_filename>C:\Users\stefa\source\repos\DigiSim\DigiSim\bin\Debug\DigiSimFiles\TTL_6510_Computer_Test_All_Codes.dgsf</digisim_filename>
   <schematics>
     <Gigatron>
       <simulation_time_interval>1</simulation_time_interval>
       <simulation_max_time>25000</simulation_max_time>
       <simulation_continue_time>1000</simulation_continue_time>
-      <signals_zoom_x>0.06176</signals_zoom_x>
-      <signals_graph_loc_x>0</signals_graph_loc_x>
+      <simulation_enable_trigger>True</simulation_enable_trigger>
+      <simulation_trigger_position>1000</simulation_trigger_position>
+      <signals_zoom_x>1.97632</signals_zoom_x>
+      <signals_graph_loc_x>3082</signals_graph_loc_x>
       <signals_graph_loc_y>0</signals_graph_loc_y>
       <display_min_time>0</display_min_time>
       <display_max_time>25000</display_max_time>
       <expand_all>False</expand_all>
       <include_inputs>False</include_inputs>
-      <display_pin_no>True</display_pin_no>
+      <display_pin_no>False</display_pin_no>
       <auto_close_import_form>True</auto_close_import_form>
       <cursor>
-        <time>22603.6269430052</time>
-        <x>1406</x>
+        <time>1844.84294041451</time>
+        <x>3656</x>
         <selected>False</selected>
       </cursor>
-      <markers>
-        <item time="1989.10954516336" x="132" selected="False">marker</item>
-        <item time="3270.72538860104" x="212" selected="False">marker</item>
-      </markers>
+      <markers />
       <current_signals>
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">RST.Outn</item>
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">CLK1</item>
@@ -71,6 +70,7 @@
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">INV_A_OUT</item>
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">INV_B_OUT</item>
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">INV_C_OUT</item>
+        <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">U1.1Y</item>
       </current_signals>
       <current_stimuli />
       <current_trigger />

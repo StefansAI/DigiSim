@@ -70,6 +70,7 @@ namespace SimBase
         /// </summary>
         public override void SimulationRestart()
         {
+            base.SimulationRestart();
             counter = startCounter;
             Timer = 0;
             lastTime = 0;

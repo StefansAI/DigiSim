@@ -656,6 +656,8 @@ namespace DigiSim
             if ((CurrentStimuli != null) && (CurrentStimuli.Count > 0))
             {
                 List<Stimulus> stimuli = Stimulus.CreateListCopy(CurrentStimuli);
+                Schematics.Elements.AddRange(stimuli);
+
                 foreach (BaseElement element in Schematics.Elements)
                     for (int i = 0; i < element.Inputs.Length; i++)
                     {
@@ -672,7 +674,6 @@ namespace DigiSim
                             }
                         }
                     }
-                Schematics.Elements.AddRange(stimuli);
             }
         }
 
@@ -2724,6 +2725,8 @@ namespace DigiSim
             if (form.ShowDialog() == DialogResult.OK)
             {
                 CurrentStimuli = form.GetStimuli();
+                LinkCurrentStimuli();
+
                 CurrentTriggers = form.GetTriggers();
                 if (Schematics != null)
                 {

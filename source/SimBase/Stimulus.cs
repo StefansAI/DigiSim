@@ -129,18 +129,28 @@ namespace SimBase
             Outputs = new Pin[1][];
             SetPinArray(Outputs, 0, this.Pins);
 
-            State = StimulusState.Initial;
+            SimulationRestart();
         }
 
 
         #region Public Methods
+
+
+        /// <summary>
+        /// Restart the simulation to all pins.
+        /// </summary>
+        public override void SimulationRestart()
+        {
+            base.SimulationRestart();
+            State = StimulusState.Initial;
+        }
+
         /// <summary>
         /// Update outputs and inputs to the simulation time.
         /// </summary>
         /// <param name="Time">Time value to update to.</param>
         public override void Update(double Time)
         {
-            base.Update(Time);
             switch (State)
             {
                 case StimulusState.Initial:
@@ -170,6 +180,7 @@ namespace SimBase
                     break;
 
             }
+            base.Update(Time);
         }
 
         /// <summary>

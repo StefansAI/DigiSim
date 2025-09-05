@@ -40,6 +40,8 @@ namespace DigiSim
             this.btnRemoveAll = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.pnLeft = new System.Windows.Forms.Panel();
+            this.pnRight = new System.Windows.Forms.Panel();
             this.pnControl.SuspendLayout();
             this.pnCenter.SuspendLayout();
             this.SuspendLayout();
@@ -80,7 +82,7 @@ namespace DigiSim
             // 
             this.lbListedSignals.Dock = System.Windows.Forms.DockStyle.Left;
             this.lbListedSignals.FormattingEnabled = true;
-            this.lbListedSignals.Location = new System.Drawing.Point(0, 0);
+            this.lbListedSignals.Location = new System.Drawing.Point(10, 0);
             this.lbListedSignals.Name = "lbListedSignals";
             this.lbListedSignals.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.lbListedSignals.Size = new System.Drawing.Size(332, 618);
@@ -91,10 +93,10 @@ namespace DigiSim
             // 
             this.lbSelectedSignals.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbSelectedSignals.FormattingEnabled = true;
-            this.lbSelectedSignals.Location = new System.Drawing.Point(457, 0);
+            this.lbSelectedSignals.Location = new System.Drawing.Point(467, 0);
             this.lbSelectedSignals.Name = "lbSelectedSignals";
             this.lbSelectedSignals.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.lbSelectedSignals.Size = new System.Drawing.Size(343, 618);
+            this.lbSelectedSignals.Size = new System.Drawing.Size(323, 618);
             this.lbSelectedSignals.TabIndex = 2;
             this.lbSelectedSignals.DoubleClick += new System.EventHandler(this.lbSelectedSignals_DoubleClick);
             // 
@@ -106,7 +108,7 @@ namespace DigiSim
             this.pnCenter.Controls.Add(this.btnRemove);
             this.pnCenter.Controls.Add(this.btnAdd);
             this.pnCenter.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnCenter.Location = new System.Drawing.Point(332, 0);
+            this.pnCenter.Location = new System.Drawing.Point(342, 0);
             this.pnCenter.Name = "pnCenter";
             this.pnCenter.Size = new System.Drawing.Size(125, 618);
             this.pnCenter.TabIndex = 3;
@@ -162,6 +164,22 @@ namespace DigiSim
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // pnLeft
+            // 
+            this.pnLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnLeft.Location = new System.Drawing.Point(0, 0);
+            this.pnLeft.Name = "pnLeft";
+            this.pnLeft.Size = new System.Drawing.Size(10, 618);
+            this.pnLeft.TabIndex = 4;
+            // 
+            // pnRight
+            // 
+            this.pnRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnRight.Location = new System.Drawing.Point(790, 0);
+            this.pnRight.Name = "pnRight";
+            this.pnRight.Size = new System.Drawing.Size(10, 618);
+            this.pnRight.TabIndex = 5;
+            // 
             // frmSignalSelect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -170,7 +188,10 @@ namespace DigiSim
             this.Controls.Add(this.lbSelectedSignals);
             this.Controls.Add(this.pnCenter);
             this.Controls.Add(this.lbListedSignals);
+            this.Controls.Add(this.pnRight);
+            this.Controls.Add(this.pnLeft);
             this.Controls.Add(this.pnControl);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "frmSignalSelect";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Select Signals to Display";
@@ -195,5 +216,7 @@ namespace DigiSim
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnAddAll;
         private System.Windows.Forms.CheckBox ckbIncludeInputs;
+        private System.Windows.Forms.Panel pnLeft;
+        private System.Windows.Forms.Panel pnRight;
     }
 }

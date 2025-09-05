@@ -54,6 +54,8 @@ namespace DigiSim
             this.tsmiExpandAll = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiShowPinNo = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiAutoCloseImportForm = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsmiSearchSignal = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiSimulation = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiSettings = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiSelectSignals = new System.Windows.Forms.ToolStripMenuItem();
@@ -293,7 +295,9 @@ namespace DigiSim
             this.tsmiEdit.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiExpandAll,
             this.tsmiShowPinNo,
-            this.tsmiAutoCloseImportForm});
+            this.tsmiAutoCloseImportForm,
+            this.toolStripMenuItem7,
+            this.tsmiSearchSignal});
             this.tsmiEdit.Name = "tsmiEdit";
             this.tsmiEdit.Size = new System.Drawing.Size(39, 20);
             this.tsmiEdit.Text = "Edit";
@@ -320,6 +324,18 @@ namespace DigiSim
             this.tsmiAutoCloseImportForm.Name = "tsmiAutoCloseImportForm";
             this.tsmiAutoCloseImportForm.Size = new System.Drawing.Size(202, 22);
             this.tsmiAutoCloseImportForm.Text = "Auto Close Import Form";
+            // 
+            // toolStripMenuItem7
+            // 
+            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(199, 6);
+            // 
+            // tsmiSearchSignal
+            // 
+            this.tsmiSearchSignal.Name = "tsmiSearchSignal";
+            this.tsmiSearchSignal.Size = new System.Drawing.Size(202, 22);
+            this.tsmiSearchSignal.Text = "Search Signal";
+            this.tsmiSearchSignal.Click += new System.EventHandler(this.tsbSearch_Click);
             // 
             // tsmiSimulation
             // 
@@ -426,6 +442,7 @@ namespace DigiSim
             this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 4;
             this.label4.Text = "label4";
+            this.label4.Visible = false;
             // 
             // label3
             // 
@@ -435,6 +452,7 @@ namespace DigiSim
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 3;
             this.label3.Text = "label3";
+            this.label3.Visible = false;
             // 
             // label2
             // 
@@ -444,6 +462,7 @@ namespace DigiSim
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "label2";
+            this.label2.Visible = false;
             // 
             // label1
             // 
@@ -453,6 +472,7 @@ namespace DigiSim
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "label1";
+            this.label1.Visible = false;
             // 
             // lbMouseCoord
             // 
@@ -462,6 +482,7 @@ namespace DigiSim
             this.lbMouseCoord.Size = new System.Drawing.Size(35, 13);
             this.lbMouseCoord.TabIndex = 0;
             this.lbMouseCoord.Text = "label1";
+            this.lbMouseCoord.Visible = false;
             // 
             // pnSignalNamesBack
             // 
@@ -759,7 +780,7 @@ namespace DigiSim
             this.tsbSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSearch.Name = "tsbSearch";
             this.tsbSearch.Size = new System.Drawing.Size(36, 36);
-            this.tsbSearch.Text = "Search";
+            this.tsbSearch.Text = "Search Signal";
             this.tsbSearch.Click += new System.EventHandler(this.tsbSearch_Click);
             // 
             // tsbSaveDigiSimFile
@@ -819,7 +840,7 @@ namespace DigiSim
             this.tsbGotoCursor.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbGotoCursor.Name = "tsbGotoCursor";
             this.tsbGotoCursor.Size = new System.Drawing.Size(36, 36);
-            this.tsbGotoCursor.Text = "ies";
+            this.tsbGotoCursor.Text = "Goto Cursor Marker";
             this.tsbGotoCursor.Click += new System.EventHandler(this.tsbGotoCursor_Click);
             // 
             // tsbGotoZero
@@ -992,6 +1013,7 @@ namespace DigiSim
             this.Controls.Add(this.pnControl);
             this.Controls.Add(this.ssStatus);
             this.Controls.Add(this.msMainMenu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.msMainMenu;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1124,6 +1146,8 @@ namespace DigiSim
         private System.Windows.Forms.SaveFileDialog sfdDigiSimFile;
         private System.Windows.Forms.ToolStripMenuItem tsmiContinueSimulation;
         private System.Windows.Forms.ToolStripStatusLabel tsslTime;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem7;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSearchSignal;
     }
 }
 

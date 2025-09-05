@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <settings>
   <identifier>DigiSim_AppSettings</identifier>
-  <schematics_source>NetlistImport</schematics_source>
-  <schematics_name>TTL_6510_Computer.net</schematics_name>
-  <netlist_filename>TTL 6510 Computer.net</netlist_filename>
+  <schematics_source>BenEater8Bit</schematics_source>
+  <schematics_name>BenEater8bit</schematics_name>
+  <netlist_filename>
+  </netlist_filename>
   <digisim_filename>C:\Users\stefa\source\repos\DigiSim\DigiSim\bin\Debug\DigiSimFiles\TTL_6510_Computer_Test_All_Codes.dgsf</digisim_filename>
   <recent_kicad_files>
     <item>C:\Users\stefa\OneDrive\Documents\KiCad\9.0\projects\TTL 6510 Computer\TTL 6510 Computer.net</item>

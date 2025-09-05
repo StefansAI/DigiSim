@@ -32,6 +32,9 @@ namespace DigiSim
 
         private frmMain main;
 
+        /// <summary>Reference to the grid cell.</summary>
+        DataGridViewCell currentCell;
+
         /// <summary>
         /// Creates the instance of the settings form.
         /// </summary>
@@ -79,6 +82,11 @@ namespace DigiSim
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void frmSettings_Shown(object sender, EventArgs e)
         {
             if (CurrentStimuli != null)
@@ -103,8 +111,15 @@ namespace DigiSim
                 }
         }
 
-        /// <summary>Reference to the grid cell.</summary>
-        DataGridViewCell currentCell;
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void frmSettings_Resize(object sender, EventArgs e)
+        {
+            pnTop.Height = (int)((ClientSize.Height - pnControl.Height) * 0.52f);
+        }
 
         /// <summary>
         /// Converts the cell value to a UInt64.
@@ -505,5 +520,6 @@ namespace DigiSim
             set { nudTriggerPosition.Value = (decimal)value; }
         }
 
+ 
     }
 }

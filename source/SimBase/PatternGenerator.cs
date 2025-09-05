@@ -78,6 +78,7 @@ namespace SimBase
         /// </summary>
         public override void SimulationRestart()
         {
+            base.SimulationRestart();
             patternIdx = 0;
             SetOutputStates(SignalState.L);
         }

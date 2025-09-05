@@ -82,6 +82,13 @@
             this.label9 = new System.Windows.Forms.Label();
             this.nudSimulationContinueTime = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
+            this.pnTop = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnBottom = new System.Windows.Forms.Panel();
+            this.splitter1 = new System.Windows.Forms.Splitter();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.pnControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSimulationMaxTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSimulationInterval)).BeginInit();
@@ -92,6 +99,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudTriggerPosition)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStimulus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSimulationContinueTime)).BeginInit();
+            this.pnTop.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.pnBottom.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnControl
@@ -101,13 +114,13 @@
             this.pnControl.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnControl.Location = new System.Drawing.Point(0, 677);
             this.pnControl.Name = "pnControl";
-            this.pnControl.Size = new System.Drawing.Size(836, 45);
+            this.pnControl.Size = new System.Drawing.Size(828, 45);
             this.pnControl.TabIndex = 0;
             // 
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(446, 10);
+            this.btnCancel.Location = new System.Drawing.Point(460, 10);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 1;
@@ -117,7 +130,7 @@
             // btnOK
             // 
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.Location = new System.Drawing.Point(276, 10);
+            this.btnOK.Location = new System.Drawing.Point(290, 10);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 0;
@@ -127,7 +140,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(432, 23);
+            this.label1.Location = new System.Drawing.Point(432, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(126, 13);
             this.label1.TabIndex = 1;
@@ -135,7 +148,7 @@
             // 
             // nudSimulationMaxTime
             // 
-            this.nudSimulationMaxTime.Location = new System.Drawing.Point(570, 21);
+            this.nudSimulationMaxTime.Location = new System.Drawing.Point(570, 10);
             this.nudSimulationMaxTime.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -147,7 +160,7 @@
             // 
             // nudSimulationInterval
             // 
-            this.nudSimulationInterval.Location = new System.Drawing.Point(182, 21);
+            this.nudSimulationInterval.Location = new System.Drawing.Point(182, 10);
             this.nudSimulationInterval.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -160,7 +173,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(48, 23);
+            this.label2.Location = new System.Drawing.Point(48, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 13);
             this.label2.TabIndex = 3;
@@ -169,7 +182,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(311, 23);
+            this.label3.Location = new System.Drawing.Point(311, 12);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(18, 13);
             this.label3.TabIndex = 5;
@@ -178,7 +191,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(699, 23);
+            this.label4.Location = new System.Drawing.Point(699, 12);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(18, 13);
             this.label4.TabIndex = 6;
@@ -186,6 +199,9 @@
             // 
             // dgvTrigger
             // 
+            this.dgvTrigger.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvTrigger.AutoGenerateColumns = false;
             this.dgvTrigger.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTrigger.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -197,10 +213,10 @@
             this.logicDataGridViewTextBoxColumn});
             this.dgvTrigger.DataMember = "dtTrigger";
             this.dgvTrigger.DataSource = this.dsTables;
-            this.dgvTrigger.Location = new System.Drawing.Point(11, 398);
+            this.dgvTrigger.Location = new System.Drawing.Point(8, 0);
             this.dgvTrigger.Name = "dgvTrigger";
             this.dgvTrigger.RowHeadersVisible = false;
-            this.dgvTrigger.Size = new System.Drawing.Size(813, 273);
+            this.dgvTrigger.Size = new System.Drawing.Size(811, 288);
             this.dgvTrigger.TabIndex = 7;
             this.dgvTrigger.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTrigger_CellClick);
             this.dgvTrigger.CellLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTrigger_CellLeave);
@@ -332,7 +348,7 @@
             // ckbEnableTrigger
             // 
             this.ckbEnableTrigger.AutoSize = true;
-            this.ckbEnableTrigger.Location = new System.Drawing.Point(182, 373);
+            this.ckbEnableTrigger.Location = new System.Drawing.Point(182, 16);
             this.ckbEnableTrigger.Name = "ckbEnableTrigger";
             this.ckbEnableTrigger.Size = new System.Drawing.Size(95, 17);
             this.ckbEnableTrigger.TabIndex = 8;
@@ -342,7 +358,7 @@
             // cbTriggerSignalSelector
             // 
             this.cbTriggerSignalSelector.FormattingEnabled = true;
-            this.cbTriggerSignalSelector.Location = new System.Drawing.Point(51, 420);
+            this.cbTriggerSignalSelector.Location = new System.Drawing.Point(52, 25);
             this.cbTriggerSignalSelector.Name = "cbTriggerSignalSelector";
             this.cbTriggerSignalSelector.Size = new System.Drawing.Size(299, 21);
             this.cbTriggerSignalSelector.TabIndex = 9;
@@ -352,7 +368,7 @@
             // cbConditionSelector
             // 
             this.cbConditionSelector.FormattingEnabled = true;
-            this.cbConditionSelector.Location = new System.Drawing.Point(389, 420);
+            this.cbConditionSelector.Location = new System.Drawing.Point(387, 25);
             this.cbConditionSelector.Name = "cbConditionSelector";
             this.cbConditionSelector.Size = new System.Drawing.Size(104, 21);
             this.cbConditionSelector.TabIndex = 10;
@@ -362,7 +378,7 @@
             // cbLogicSelector
             // 
             this.cbLogicSelector.FormattingEnabled = true;
-            this.cbLogicSelector.Location = new System.Drawing.Point(693, 420);
+            this.cbLogicSelector.Location = new System.Drawing.Point(690, 25);
             this.cbLogicSelector.Name = "cbLogicSelector";
             this.cbLogicSelector.Size = new System.Drawing.Size(98, 21);
             this.cbLogicSelector.TabIndex = 11;
@@ -372,7 +388,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(699, 374);
+            this.label5.Location = new System.Drawing.Point(699, 17);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(18, 13);
             this.label5.TabIndex = 14;
@@ -380,7 +396,7 @@
             // 
             // nudTriggerPosition
             // 
-            this.nudTriggerPosition.Location = new System.Drawing.Point(570, 372);
+            this.nudTriggerPosition.Location = new System.Drawing.Point(570, 15);
             this.nudTriggerPosition.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -393,7 +409,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(432, 374);
+            this.label6.Location = new System.Drawing.Point(432, 17);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(136, 13);
             this.label6.TabIndex = 12;
@@ -401,6 +417,9 @@
             // 
             // dgvStimulus
             // 
+            this.dgvStimulus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvStimulus.AutoGenerateColumns = false;
             this.dgvStimulus.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStimulus.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -413,10 +432,10 @@
             this.dataGridViewTextBoxColumn3});
             this.dgvStimulus.DataMember = "dtStimulus";
             this.dgvStimulus.DataSource = this.dsTables;
-            this.dgvStimulus.Location = new System.Drawing.Point(11, 73);
+            this.dgvStimulus.Location = new System.Drawing.Point(8, 0);
             this.dgvStimulus.Name = "dgvStimulus";
             this.dgvStimulus.RowHeadersVisible = false;
-            this.dgvStimulus.Size = new System.Drawing.Size(813, 273);
+            this.dgvStimulus.Size = new System.Drawing.Size(811, 279);
             this.dgvStimulus.TabIndex = 15;
             this.dgvStimulus.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStimulus_CellClick);
             this.dgvStimulus.CellLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStimulus_CellLeave);
@@ -470,7 +489,7 @@
             // cbOutput
             // 
             this.cbOutput.FormattingEnabled = true;
-            this.cbOutput.Location = new System.Drawing.Point(390, 95);
+            this.cbOutput.Location = new System.Drawing.Point(387, 32);
             this.cbOutput.Name = "cbOutput";
             this.cbOutput.Size = new System.Drawing.Size(103, 21);
             this.cbOutput.TabIndex = 16;
@@ -480,7 +499,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 57);
+            this.label7.Location = new System.Drawing.Point(12, 46);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(120, 13);
             this.label7.TabIndex = 18;
@@ -489,7 +508,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(11, 382);
+            this.label8.Location = new System.Drawing.Point(11, 25);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(95, 13);
             this.label8.TabIndex = 19;
@@ -498,7 +517,7 @@
             // cbStimulusSignalSelector
             // 
             this.cbStimulusSignalSelector.FormattingEnabled = true;
-            this.cbStimulusSignalSelector.Location = new System.Drawing.Point(52, 95);
+            this.cbStimulusSignalSelector.Location = new System.Drawing.Point(49, 32);
             this.cbStimulusSignalSelector.Name = "cbStimulusSignalSelector";
             this.cbStimulusSignalSelector.Size = new System.Drawing.Size(299, 21);
             this.cbStimulusSignalSelector.TabIndex = 20;
@@ -508,7 +527,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(699, 49);
+            this.label9.Location = new System.Drawing.Point(699, 38);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(18, 13);
             this.label9.TabIndex = 23;
@@ -516,7 +535,7 @@
             // 
             // nudSimulationContinueTime
             // 
-            this.nudSimulationContinueTime.Location = new System.Drawing.Point(570, 47);
+            this.nudSimulationContinueTime.Location = new System.Drawing.Point(570, 36);
             this.nudSimulationContinueTime.Maximum = new decimal(new int[] {
             1000000000,
             0,
@@ -529,45 +548,110 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(432, 49);
+            this.label10.Location = new System.Drawing.Point(432, 38);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(116, 13);
             this.label10.TabIndex = 21;
             this.label10.Text = "Continue Time Interval:";
             // 
+            // pnTop
+            // 
+            this.pnTop.Controls.Add(this.panel5);
+            this.pnTop.Controls.Add(this.panel2);
+            this.pnTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnTop.Location = new System.Drawing.Point(0, 0);
+            this.pnTop.Name = "pnTop";
+            this.pnTop.Size = new System.Drawing.Size(828, 345);
+            this.pnTop.TabIndex = 25;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.nudSimulationInterval);
+            this.panel2.Controls.Add(this.nudSimulationMaxTime);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.nudSimulationContinueTime);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(828, 66);
+            this.panel2.TabIndex = 25;
+            // 
+            // pnBottom
+            // 
+            this.pnBottom.Controls.Add(this.panel6);
+            this.pnBottom.Controls.Add(this.panel4);
+            this.pnBottom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnBottom.Location = new System.Drawing.Point(0, 345);
+            this.pnBottom.Name = "pnBottom";
+            this.pnBottom.Size = new System.Drawing.Size(828, 332);
+            this.pnBottom.TabIndex = 26;
+            // 
+            // splitter1
+            // 
+            this.splitter1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.splitter1.Location = new System.Drawing.Point(0, 345);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(828, 3);
+            this.splitter1.TabIndex = 27;
+            this.splitter1.TabStop = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.nudTriggerPosition);
+            this.panel4.Controls.Add(this.ckbEnableTrigger);
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.label8);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(828, 44);
+            this.panel4.TabIndex = 20;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.dgvStimulus);
+            this.panel5.Controls.Add(this.cbOutput);
+            this.panel5.Controls.Add(this.cbStimulusSignalSelector);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 66);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(828, 279);
+            this.panel5.TabIndex = 26;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.dgvTrigger);
+            this.panel6.Controls.Add(this.cbConditionSelector);
+            this.panel6.Controls.Add(this.cbLogicSelector);
+            this.panel6.Controls.Add(this.cbTriggerSignalSelector);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(0, 44);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(828, 288);
+            this.panel6.TabIndex = 21;
+            // 
             // frmSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(836, 722);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.nudSimulationContinueTime);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.cbStimulusSignalSelector);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.cbOutput);
-            this.Controls.Add(this.dgvStimulus);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.nudTriggerPosition);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.cbLogicSelector);
-            this.Controls.Add(this.cbConditionSelector);
-            this.Controls.Add(this.cbTriggerSignalSelector);
-            this.Controls.Add(this.ckbEnableTrigger);
-            this.Controls.Add(this.dgvTrigger);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.nudSimulationInterval);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.nudSimulationMaxTime);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(828, 722);
+            this.Controls.Add(this.splitter1);
+            this.Controls.Add(this.pnBottom);
+            this.Controls.Add(this.pnTop);
             this.Controls.Add(this.pnControl);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "frmSettings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Settings";
             this.Shown += new System.EventHandler(this.frmSettings_Shown);
+            this.Resize += new System.EventHandler(this.frmSettings_Resize);
             this.pnControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nudSimulationMaxTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSimulationInterval)).EndInit();
@@ -578,8 +662,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudTriggerPosition)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStimulus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSimulationContinueTime)).EndInit();
+            this.pnTop.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.pnBottom.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -645,5 +736,12 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.NumericUpDown nudSimulationContinueTime;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Panel pnTop;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnBottom;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Splitter splitter1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
     }
 }

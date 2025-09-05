@@ -1,4 +1,12 @@
-﻿using SimBase;
+﻿// ================================================
+//
+// SPDX-FileCopyrightText: 2025 Stefan Warnke
+//
+// SPDX-License-Identifier: BeerWare
+//
+//=================================================
+
+using SimBase;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,11 +17,19 @@ using System.Windows.Forms;
 
 namespace DigiSim
 {
+    /// <summary>
+    /// A class to export a connection list for checking. 
+    /// </summary>
     internal class ExportConnections
     {
+        /// <summary>Reference to the main form object.</summary>
         private frmMain main;
 
-
+        /// <summary>
+        /// Creates the instance of the export class.
+        /// </summary>
+        /// <param name="Main">Reference to the main form object.</param>
+        /// <param name="FileName">Full file name for the export csv file.</param>
         public ExportConnections(frmMain Main, string FileName)
         {
             this.main = Main;

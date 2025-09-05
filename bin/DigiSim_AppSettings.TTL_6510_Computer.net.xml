@@ -3,7 +3,7 @@
   <identifier>DigiSim_AppSettings</identifier>
   <schematics_source>NetlistImport</schematics_source>
   <schematics_name>TTL_6510_Computer.net</schematics_name>
-  <netlist_filename>TTL 6510 Computer.net</netlist_filename>
+  <netlist_filename>C:\Users\stefa\OneDrive\Documents\KiCad\9.0\projects\TTL 6510 Computer\TTL 6510 Computer.net</netlist_filename>
   <digisim_filename>C:\Users\stefa\source\repos\DigiSim\DigiSim\bin\Debug\DigiSimFiles\TTL_6510_Computer_Test_All_Codes.dgsf</digisim_filename>
   <schematics>
     <TTL_6510_Computer.net>
@@ -12,9 +12,9 @@
       <simulation_continue_time>90000</simulation_continue_time>
       <simulation_enable_trigger>True</simulation_enable_trigger>
       <simulation_trigger_position>1000</simulation_trigger_position>
-      <signals_zoom_x>0.0363294117647059</signals_zoom_x>
-      <signals_graph_loc_x>2025</signals_graph_loc_x>
-      <signals_graph_loc_y>261</signals_graph_loc_y>
+      <signals_zoom_x>0.145317647058823</signals_zoom_x>
+      <signals_graph_loc_x>7165</signals_graph_loc_x>
+      <signals_graph_loc_y>270</signals_graph_loc_y>
       <display_min_time>0</display_min_time>
       <display_max_time>680000</display_max_time>
       <expand_all>False</expand_all>
@@ -22,11 +22,15 @@
       <display_pin_no>True</display_pin_no>
       <auto_close_import_form>True</auto_close_import_form>
       <cursor>
-        <time>66860</time>
-        <x>2438</x>
+        <time>51879.4527202073</time>
+        <x>7549</x>
         <selected>False</selected>
       </cursor>
-      <markers />
+      <markers>
+        <item time="86321.2435233161" x="12554" selected="False">marker</item>
+        <item time="50009.4114313473" x="7277" selected="False">marker</item>
+        <item time="51008.9459196893" x="7422" selected="True">marker</item>
+      </markers>
       <current_signals>
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">/RESET</item>
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">CLK0</item>
@@ -35,27 +39,27 @@
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">/2CLK</item>
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">iPHI2</item>
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">/iPHI2</item>
-        <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">/INT</item>
-        <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">/NMI</item>
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">MC</item>
         <item radix="Decimal" invert="False" reverse="False" highlight="False" expanded="False">REG_MC</item>
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">REG_IR</item>
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">FCY_COND</item>
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">HCY_NEG</item>
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">SPEC_COND</item>
-        <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">EXC</item>
+        <item radix="Hexadecimal" invert="False" reverse="False" highlight="True" expanded="False">/INT</item>
+        <item radix="Hexadecimal" invert="False" reverse="False" highlight="True" expanded="False">/NMI</item>
+        <item radix="Hexadecimal" invert="False" reverse="False" highlight="True" expanded="False">EXC</item>
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">/LD_IR</item>
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">IR</item>
-        <item radix="Hexadecimal" invert="False" reverse="False" highlight="True" expanded="False">Mnemonic</item>
+        <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">Mnemonic</item>
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">PC</item>
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">AR</item>
-        <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">AB</item>
-        <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">DB</item>
+        <item radix="Hexadecimal" invert="False" reverse="False" highlight="True" expanded="False">AB</item>
+        <item radix="Hexadecimal" invert="False" reverse="False" highlight="True" expanded="False">DB</item>
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">iDB</item>
-        <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">R/W</item>
+        <item radix="Hexadecimal" invert="False" reverse="False" highlight="True" expanded="False">R/W</item>
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">AL</item>
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">REG_SR</item>
-        <item radix="Hexadecimal" invert="False" reverse="False" highlight="True" expanded="False">REG_A</item>
+        <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">REG_A</item>
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">REG_X</item>
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">REG_Y</item>
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">REG_SP</item>
@@ -144,12 +148,12 @@
         <item radix="Hexadecimal" invert="False" reverse="False" highlight="False" expanded="False">/OE_ALU_SH</item>
       </current_signals>
       <current_stimuli>
-        <item bits="1" output="OpenDrain" value="1" value_str="1" time="500000" time_str="500000" duration="500" duration_str="500">/INT</item>
-        <item bits="1" output="OpenDrain" value="1" value_str="1" time="501000" time_str="501000" duration="100" duration_str="100">/NMI</item>
+        <item bits="1" output="OpenDrain" value="0" value_str="0" time="50000" time_str="50000" duration="500" duration_str="500">/INT</item>
+        <item bits="1" output="OpenDrain" value="0" value_str="0" time="51000" time_str="51000" duration="100" duration_str="100">/NMI</item>
       </current_stimuli>
       <current_trigger>
-        <item bits="16" condition="EQ" compare_value="16" compare_value_str="0x0010" logic="AND">AB</item>
-        <item bits="8" condition="EQ" compare_value="206" compare_value_str="0xCE" logic="AND">DB</item>
+        <item bits="16" condition="EQ" compare_value="4660" compare_value_str="0x1234" logic="AND">AB</item>
+        <item bits="8" condition="EQ" compare_value="34" compare_value_str="0x22" logic="AND">DB</item>
         <item bits="1" condition="R" compare_value="18446744073709551615" compare_value_str="" logic="OR">R/W</item>
       </current_trigger>
     </TTL_6510_Computer.net>
