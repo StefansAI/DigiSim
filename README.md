@@ -5,11 +5,11 @@
   <img src="docs/assets/images/mainscreen.png" />
 </div>
 <br>
-DigiSim is a very simple simulator for TTL circuits to display the timing behaviour similar to a logic analyzer. The GUI looks familiar to anyone programming and simulating Xilinx FPGAs. DigiSim that can load KiCad-9 netlists to create an internal model. File names embedded in the schematics can be used to automatically load binaries into RAMs, ROMs or GALs for the simulation. A text file can provide the mnemonic information for a very simple disassembler.
+DigiSim is a simple simulator for TTL circuits to display the timing behavior similar to a logic analyzer. The GUI looks familiar to anyone programming and simulating Xilinx FPGAs. DigiSim that can load KiCad-9 netlists to create an internal model. File names embedded in the schematics can be used to automatically load binaries into RAMs, ROMs or GALs for the simulation. A text file can provide the mnemonic information for a very simple disassembler.
 <br><br>
 <h3 style="text-align: center;">Background</h3>
 <br>
-After a friend demonstrated his <a href="https://eater.net/8bit/">"Ben Eater 8bit Computer"</a> to me, I got hooked into TTL computer designs. There are a number of examples, where people built a processor out of TTL chips. Another nice one is the <a href="https://gigatron.io/">"Gigatron – TTL microcomputer"</a>. While the first one just uses adder chips for the <a href="https://en.wikipedia.org/wiki/Arithmetic_logic_unit">ALU</a>, the Gigatron uses a combination of multiplexers and adders to achieve more functionality. I wanted to nice time diagrams of their functionality and the idea was born to write a little program to do that.
+After a friend demonstrated his <a href="https://eater.net/8bit/">"Ben Eater 8bit Computer"</a> to me, I got hooked into TTL computer designs. There are a number of examples, where people built a processor out of TTL chips. Another nice one is the <a href="https://gigatron.io/">"Gigatron – TTL microcomputer"</a>. While the first one just uses adder chips for the <a href="https://en.wikipedia.org/wiki/Arithmetic_logic_unit">ALU</a>, the Gigatron uses a combination of multiplexers and adders to achieve more functionality. I wanted to nice time diagrams of their functionality, and the idea was born to write a little program to do that.
 <br>
 So, the first attempt was creating a nice GUI that is close to what I used to work with for FPGA designs and then hardcoded the 2 schematics as examples. So far, so good. The next step was using the new tool to analyze and debug my own schematics, which required a KiCad-9 netlist import. Here is now a version, that helped me a lot and can be helpful for others as well.
 <br><br>
@@ -61,9 +61,9 @@ Right-clicking on a signal brings up a context menu which allows changing the ra
 <div style="text-align: center;">
   <img src="docs/assets/images/file_menu_built_in.png" />
 </div>
-The file menu offers 2 major sources for loading a schematics: Hardcoded built-in or KiCad 9 Netlist. Clicking on the netlist import will show and OpenFileDialog to navigate to the netlist file. Previously opened files will be listed to the right of the import menu item for quicker access.<br>
-Once a schematics had been loaded and simulated, it can be stored with all wave forms as a DigiSimFile. Few sample files are provided in the bin-folder, which can be loaded from the file menu.<br>
-Saving the current settings will write all current GUI settings to the XML file for this schematics to be automatically loaded at next load. This function is useful when loading a netlist after changing GUI settings.
+The file menu offers 2 major sources for loading a schematic: Hardcoded built-in or KiCad 9 Netlist. Clicking on the netlist import will show and OpenFileDialog to navigate to the netlist file. Previously opened files will be listed to the right of the import menu item for quicker access.<br>
+Once a schematic had been loaded and simulated, it can be stored with all wave forms as a DigiSimFile. Few sample files are provided in the bin-folder, which can be loaded from the file menu.<br>
+Saving the current settings will write all current GUI settings to the XML file for this schematic to be automatically loaded at next load. This function is useful when loading a netlist after changing GUI settings.
 Exiting the application will also automatically save the settings.<br>
 Exporting connections can be useful for checking hardcoded or imported schematics against the design.
 <br><br>
@@ -71,8 +71,8 @@ Exporting connections can be useful for checking hardcoded or imported schematic
 <div style="text-align: center;">
   <img src="docs/assets/images/edit_menu.png" />
 </div>
-"Expand All" does the same as the tool buttions for expanding and collapsing. <br>
-"Show Pin Numbers" applies to unlabeled signals of any chip in the schematics. For instance a signal name could be "U1.1Y" and with the pin number it will show as "U1.1Y #2".<br>
+"Expand All" does the same as the tool buttons for expanding and collapsing. <br>
+"Show Pin Numbers" applies to unlabeled signals of any chip in the schematics. For instance, a signal name could be "U1.1Y" and with the pin number it will show as "U1.1Y #2".<br>
 "Auto Close Import Form" will automatically close the KiCad netlist import log form after the import. If unchecked, the log will have to be closed manually.<br>
 "Search Signal" does the same as the magnifier tool button. It allows to bring a signal to the viewing area, that is above or below the current signals.<br><br>
 <br><br>
@@ -89,7 +89,7 @@ Exporting connections can be useful for checking hardcoded or imported schematic
 </div>
 The settings dialog allows editing time value, stimuli and triggers. The "Simulation Time Step" is the simulation resolution. Lower numbers give higher resolution, but will also take longer to simulate. The "Simulation Time Window" is the maximum time from 0 in ns. The simulation will stop at that time value. The "Continue Time Interval" Is the time added to the end every time the "Continue Simulation" menu item is activated. <br>
 The "Input Signal Stimulation" grid allows adding signal activation not specifically driven by the schematics. The example shows activation of interrupt lines at a defined time.<br>
-The "Trigger Conditions" grid allows adding signal state combinations to cause a trigger event. In the current version, this event is just displayed. It is intended to run until the trigger condition is met and place that event at the requested postion.
+The "Trigger Conditions" grid allows adding signal state combinations to cause a trigger event. In the current version, this event is just displayed. It is intended to run until the trigger condition is met and place that event at the requested position.
 <br><br>
 <h5>4.1.2 Stimuli and Triggers</h5>
 <div style="text-align: center;">
@@ -108,4 +108,4 @@ The left side lists all available pins and labeled signals in alphabetical order
 <div style="text-align: center;">
   <img src="docs/assets/images/signal_select2.png"/>
 </div>
-By default, the left side only lists labeled signal and outputs, because the outputs are normally most interesting for the analysis. When checking the "Inputs" checkbox, the left side additionaly lists all input pins to select from. The example shows some selected inputs. This can help debugging states at an input. 
+By default, the left side only lists labeled signal and outputs, because the outputs are normally most interesting for the analysis. When checking the "Inputs" checkbox, the left side additionally lists all input pins to select from. The example shows some selected inputs. This can help debugging states at an input. 

@@ -433,6 +433,7 @@ namespace DigiSim
             this.pnControl.Name = "pnControl";
             this.pnControl.Size = new System.Drawing.Size(1904, 32);
             this.pnControl.TabIndex = 2;
+            this.pnControl.Visible = false;
             // 
             // label4
             // 
@@ -442,7 +443,6 @@ namespace DigiSim
             this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 4;
             this.label4.Text = "label4";
-            this.label4.Visible = false;
             // 
             // label3
             // 
@@ -452,7 +452,6 @@ namespace DigiSim
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 3;
             this.label3.Text = "label3";
-            this.label3.Visible = false;
             // 
             // label2
             // 
@@ -462,7 +461,6 @@ namespace DigiSim
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "label2";
-            this.label2.Visible = false;
             // 
             // label1
             // 
@@ -472,7 +470,6 @@ namespace DigiSim
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "label1";
-            this.label1.Visible = false;
             // 
             // lbMouseCoord
             // 
@@ -482,7 +479,6 @@ namespace DigiSim
             this.lbMouseCoord.Size = new System.Drawing.Size(35, 13);
             this.lbMouseCoord.TabIndex = 0;
             this.lbMouseCoord.Text = "label1";
-            this.lbMouseCoord.Visible = false;
             // 
             // pnSignalNamesBack
             // 

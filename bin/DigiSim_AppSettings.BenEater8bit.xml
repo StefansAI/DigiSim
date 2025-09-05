@@ -14,7 +14,7 @@
       <simulation_enable_trigger>True</simulation_enable_trigger>
       <simulation_trigger_position>1000</simulation_trigger_position>
       <signals_zoom_x>1.2488E-05</signals_zoom_x>
-      <signals_graph_loc_x>0</signals_graph_loc_x>
+      <signals_graph_loc_x>-3082</signals_graph_loc_x>
       <signals_graph_loc_y>0</signals_graph_loc_y>
       <display_min_time>0</display_min_time>
       <display_max_time>250000000</display_max_time>
